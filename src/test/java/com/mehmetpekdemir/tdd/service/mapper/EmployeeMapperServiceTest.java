@@ -24,7 +24,7 @@ class EmployeeMapperServiceTest {
         createEmployeeRequest.setLastName("lastname");
 
         //when
-        CreateEmployeeVO createEmployeeVO = employeeMapperService.createFor(createEmployeeRequest);
+        CreateEmployeeVO createEmployeeVO = employeeMapperService.convertRequestToVO(createEmployeeRequest);
 
         //then
         then(createEmployeeVO.getFirstName()).isEqualTo("firstname");
@@ -39,7 +39,7 @@ class EmployeeMapperServiceTest {
         createEmployeeVO.setLastName("lastname");
 
         //when
-        Employee employee = employeeMapperService.createFor(createEmployeeVO);
+        Employee employee = employeeMapperService.convertVOToEntity(createEmployeeVO);
 
         //then
         then(createEmployeeVO.getFirstName()).isEqualTo("firstname");

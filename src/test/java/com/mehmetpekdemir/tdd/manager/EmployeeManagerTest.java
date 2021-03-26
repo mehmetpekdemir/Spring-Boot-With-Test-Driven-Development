@@ -42,7 +42,7 @@ class EmployeeManagerTest {
         createEmployeeVO.setFirstName("firstname");
         createEmployeeVO.setLastName("lastname");
 
-        given(employeeMapperService.createFor(createEmployeeRequest)).willReturn(createEmployeeVO);
+        given(employeeMapperService.convertRequestToVO(createEmployeeRequest)).willReturn(createEmployeeVO);
 
         //when
         employeeManager.createEmployee(createEmployeeRequest);
