@@ -42,7 +42,7 @@ class EmployeeServiceTest {
         employee.setFirstName("firstname");
         employee.setLastName("lastname");
 
-        given(employeeMapperService.createFor(createEmployeeVO)).willReturn(employee);
+        given(employeeMapperService.convertVOToEntity(createEmployeeVO)).willReturn(employee);
 
         //when
         employeeService.createEmployee(createEmployeeVO);

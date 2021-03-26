@@ -8,14 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmployeeMapperService {
 
-    public CreateEmployeeVO createFor(CreateEmployeeRequest createEmployeeRequest) {
+    public CreateEmployeeVO convertRequestToVO(CreateEmployeeRequest createEmployeeRequest) {
         CreateEmployeeVO createEmployeeVO = new CreateEmployeeVO();
         createEmployeeVO.setFirstName(createEmployeeRequest.getFirstName());
         createEmployeeVO.setLastName(createEmployeeRequest.getLastName());
         return createEmployeeVO;
     }
 
-    public Employee createFor(CreateEmployeeVO createEmployeeVO) {
+    public Employee convertVOToEntity(CreateEmployeeVO createEmployeeVO) {
         Employee employee = new Employee();
         employee.setFirstName(createEmployeeVO.getFirstName());
         employee.setLastName(createEmployeeVO.getLastName());

@@ -20,7 +20,7 @@ public class EmployeeService {
 
     @Transactional
     public void createEmployee(CreateEmployeeVO createEmployeeVO) {
-        Employee employee = employeeMapperService.createFor(createEmployeeVO);
+        final Employee employee = employeeMapperService.convertVOToEntity(createEmployeeVO);
         employeeRepository.save(employee);
     }
 

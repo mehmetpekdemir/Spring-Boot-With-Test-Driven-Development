@@ -2,7 +2,7 @@ package com.mehmetpekdemir.tdd.controller.request;
 
 import javax.validation.constraints.NotBlank;
 
-public class CreateEmployeeRequest {
+public final class CreateEmployeeRequest {
 
     @NotBlank
     private String firstName;

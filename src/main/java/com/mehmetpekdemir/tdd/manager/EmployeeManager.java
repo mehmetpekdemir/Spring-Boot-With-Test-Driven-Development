@@ -18,7 +18,7 @@ public class EmployeeManager {
     }
 
     public void createEmployee(CreateEmployeeRequest createEmployeeRequest) {
-        CreateEmployeeVO createEmployeeVO = employeeMapperService.createFor(createEmployeeRequest);
+        final CreateEmployeeVO createEmployeeVO = employeeMapperService.convertRequestToVO(createEmployeeRequest);
         employeeService.createEmployee(createEmployeeVO);
     }
 

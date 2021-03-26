@@ -1,6 +1,6 @@
 package com.mehmetpekdemir.tdd.service.vo;
 
-public class CreateEmployeeVO {
+public final class CreateEmployeeVO {
 
     private String firstName;
 
