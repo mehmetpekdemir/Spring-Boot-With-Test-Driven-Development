@@ -8,10 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @since 1.0
  */
 @SpringBootTest
-class TddApplicationTests {
+class TddApplicationTest {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void it_should_context_loads() {
+    }
 
 }
