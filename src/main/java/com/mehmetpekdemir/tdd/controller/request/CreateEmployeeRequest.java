@@ -2,6 +2,10 @@ package com.mehmetpekdemir.tdd.controller.request;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 public final class CreateEmployeeRequest {
 
     @NotBlank

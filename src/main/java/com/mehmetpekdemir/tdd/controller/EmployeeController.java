@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 @RestController
 @RequestMapping("/api/v1/employee")
 public class EmployeeController {

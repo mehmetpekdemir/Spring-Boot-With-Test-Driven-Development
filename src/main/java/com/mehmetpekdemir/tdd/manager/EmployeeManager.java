@@ -6,6 +6,10 @@ import com.mehmetpekdemir.tdd.service.mapper.EmployeeMapperService;
 import com.mehmetpekdemir.tdd.service.vo.CreateEmployeeVO;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 @Service
 public class EmployeeManager {
 

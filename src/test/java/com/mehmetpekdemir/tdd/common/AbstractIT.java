@@ -7,6 +7,10 @@ import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 public abstract class AbstractIT {
 
     @Container
