@@ -4,6 +4,10 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 @Entity
 @Table(name = "employees")
 public class Employee implements Serializable {
@@ -11,8 +15,7 @@ public class Employee implements Serializable {
     private static final long serialVersionUID = -1072849570732143234L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_employees")
-    @SequenceGenerator(name = "seq_employees", allocationSize = 10)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "first_name", nullable = false, length = 50)

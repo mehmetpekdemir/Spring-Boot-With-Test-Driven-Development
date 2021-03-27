@@ -8,6 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
+/**
+ * @author MEHMET PEKDEMIR
+ * @since 1.0
+ */
 @IT
 class EmployeeRepositoryIT extends AbstractIT {
 

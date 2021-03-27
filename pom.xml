@@ -16,6 +16,17 @@
     <name>tdd</name>
     <description>Test Driven Development</description>
 
+    <developers>
+        <developer>
+            <id>mehmetp</id>
+            <name>MEHMET PEKDEMIR</name>
+            <email>mehmetpekdemir06@hotmail.com</email>
+            <roles>
+                <role>Software Engineer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <properties>
         <java.version>11</java.version>
         <testcontainers.version>1.15.2</testcontainers.version>
