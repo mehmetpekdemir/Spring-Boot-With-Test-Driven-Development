@@ -30,4 +30,12 @@ public final class CreateEmployeeRequest {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "CreateEmployeeRequest{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
 }
