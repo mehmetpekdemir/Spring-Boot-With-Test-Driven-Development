@@ -26,4 +26,12 @@ public final class CreateEmployeeVO {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "CreateEmployeeVO{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
 }
